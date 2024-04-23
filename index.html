@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Library</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        #header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            color: #fff;
+        }
+        button:focus {
+            outline: none;
+        }
+        img {
+            vertical-align: middle;
+            max-width: 200px;
+        }
+        .game-button {
+            display: block;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 style="font-family: 'Arial Black', sans-serif;">Game Library</h1>
+        <button onclick="window.location.href='minecraft.html'"><img src="minecraftlogo.png" alt="Minecraft Logo"><span class="game-button">Minecraft</span></button>
+    </div>
+</body>
+</html>

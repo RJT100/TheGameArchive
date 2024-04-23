@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Game</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        #banner {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        #banner h1 {
+            margin: 0;
+            font-family: 'Arial Black', sans-serif;
+        }
+        #game-container {
+            height: calc(100% - 50px);
+            position: relative;
+            margin-top: 50px;
+        }
+        #game-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #fullscreen-button, #back-button {
+            position: absolute;
+            top: 10px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #fullscreen-button {
+            right: 10px;
+        }
+        #back-button {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <h1>Minecraft</h1>
+        <button id="fullscreen-button">Fullscreen</button>
+        <button id="back-button">Back</button>
+    </div>
+    <div id="game-container">
+        <iframe id="game-iframe" src="https://tortillagames.org/game/minecraft/eaglercraftx.html" frameborder="0" tabindex="0"></iframe>
+    </div>
+
+    <script>
+        function exitFullscreen() {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        }
+
+        document.getElementById('fullscreen-button').addEventListener('click', function() {
+            document.getElementById('game-iframe').requestFullscreen();
+            document.getElementById('fullscreen-button').style.display = 'none';
+            document.getElementById('back-button').style.display = 'none';
+        });
+
+        document.getElementById('back-button').addEventListener('click', function() {
+            window.history.back();
+        });
+
+        document.addEventListener('fullscreenchange', function() {
+            if (!document.fullscreenElement) {
+                document.getElementById('fullscreen-button').style.display = 'block';
+                document.getElementById('back-button').style.display = 'block';
+            }
+        });
+
+        window.onload = function() {
+            document.getElementById('game-iframe').focus();
+        };
+    </script>
+</body>
+</html>
