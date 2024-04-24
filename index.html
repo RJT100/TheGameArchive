@@ -16,7 +16,11 @@
         }
         #header {
             text-align: center;
-            margin-top: 50px;
+            margin-top: -100vh; /* Start above the viewport */
+            animation: slideIn 1s forwards; /* Animation to slide into view */
+        }
+        h1 {
+            font-size: 48px; /* Increase size of Game Library text */
         }
         button {
             border: none;
@@ -38,7 +42,16 @@
         .game-button {
             display: block;
             font-size: 24px;
-            margin-top: 10px;
+            margin-top: 20px; /* Increased margin */
+        }
+        /* Animation to slide content into view */
+        @keyframes slideIn {
+            from {
+                margin-top: -100vh;
+            }
+            to {
+                margin-top: 0;
+            }
         }
     </style>
 </head>
@@ -46,6 +59,7 @@
     <div id="header">
         <h1 style="font-family: 'Arial Black', sans-serif;">Game Library</h1>
         <button onclick="window.location.href='minecraft.html'"><img src="minecraftlogo.png" alt="Minecraft Logo"><span class="game-button">Minecraft</span></button>
+        <button onclick="window.location.href='backrooms.html'"><img src="thebackroomslogo.png" alt="The Backrooms Logo"><span class="game-button">The Backrooms</span></button>
     </div>
 </body>
 </html>
