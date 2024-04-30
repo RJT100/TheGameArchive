@@ -44,6 +44,16 @@
             font-size: 24px;
             margin-top: 20px; /* Increased margin */
         }
+        .sponsored {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 14px;
+        }
+        .sponsored a {
+            color: #fff;
+            text-decoration: none;
+        }
         /* Animation to slide content into view */
         @keyframes slideIn {
             from {
@@ -60,6 +70,11 @@
         <h1 style="font-family: 'Arial Black', sans-serif;">Game Library</h1>
         <button onclick="window.location.href='minecraft.html'"><img src="minecraftlogo.png" alt="Minecraft Logo"><span class="game-button">Minecraft</span></button>
         <button onclick="window.location.href='backrooms.html'"><img src="thebackroomslogo.png" alt="The Backrooms Logo"><span class="game-button">The Backrooms</span></button>
+        <button onclick="window.location.href='clusterrush.html'"><img src="clusterrushlogo.jpg" alt="Cluster Rush Logo"><span class="game-button">Cluster Rush</span></button> <!-- Added Cluster Rush button -->
+    </div>
+    <div class="sponsored">
+        Sponsored by iEvade&#174;<br>
+        <a href="https://ievade.xyz" target="_blank" rel="noopener noreferrer">ievade.xyz</a>
     </div>
 </body>
 </html>
