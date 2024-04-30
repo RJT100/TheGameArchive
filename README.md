@@ -1,2 +1,2 @@
-Currently only has Minecraft and a Backrooms game
+Currently only has Minecraft, Backrooms, and Cluster Rush
 Enjoy lol
