@@ -1,4 +1,5 @@
 # The Game Archive
-Currently only has Minecraft, Backrooms, Cluster Rush, 2048, and 1v1.lol.
+Currently only has Minecraft, Backrooms, Cluster Rush, 2048, 1v1.lol, and Vex 6
 Enjoy lol
-# Added 1v1.lol
+# Today's Update
+  Added 1v1.lol and Vex 6
